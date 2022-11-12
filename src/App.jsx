@@ -1,11 +1,6 @@
 import React, { useState, useEffect, lazy, Suspense } from "react";
 import { ErrorBoundary } from "react-error-boundary";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Outlet,
-} from "react-router-dom";
+import { HashRouter as Router, Routes, Route, Outlet } from "react-router-dom";
 
 import { useGlobalContext } from "./global/context/global";
 

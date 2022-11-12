@@ -4,6 +4,7 @@ import { VitePWA } from "vite-plugin-pwa";
 import dns from "dns";
 dns.setDefaultResultOrder("verbatim");
 export default defineConfig({
+  base: "/admin-template/",
   plugins: [
     react(),
     VitePWA({
