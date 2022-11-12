@@ -1,0 +1,72 @@
+[
+  {
+    "USERNAME": "system",
+    "ROLEID": 1,
+    "ROLENM": "Your Role",
+    "ROLEMNID": 1,
+    "RLMNNAME": "Level 1",
+    "RLMNUPID": 0,
+    "RLMNSORT": "1",
+    "MNID": null,
+    "MNTYPE": null,
+    "MNNAME": null,
+    "MNOBJECT": null,
+    "MNPATH": null
+  },
+  {
+    "USERNAME": "system",
+    "ROLEID": 1,
+    "ROLENM": "Your Role",
+    "ROLEMNID": 2,
+    "RLMNNAME": null,
+    "RLMNUPID": 1,
+    "RLMNSORT": "1",
+    "MNID": null,
+    "MNTYPE": null,
+    "MNNAME": "Level 2",
+    "MNOBJECT": null,
+    "MNPATH": null
+  },
+  {
+    "USERNAME": "system",
+    "ROLEID": 1,
+    "ROLENM": "Your Role",
+    "ROLEMNID": 3,
+    "RLMNNAME": null,
+    "RLMNUPID": 2,
+    "RLMNSORT": "2",
+    "MNID": null,
+    "MNTYPE": null,
+    "MNNAME": "Level 3",
+    "MNOBJECT": null,
+    "MNPATH": null
+  },
+  {
+    "USERNAME": "system",
+    "ROLEID": 1,
+    "ROLENM": "Your Role",
+    "ROLEMNID": 4,
+    "RLMNNAME": "Level 1 ",
+    "RLMNUPID": 0,
+    "RLMNSORT": "1",
+    "MNID": null,
+    "MNTYPE": null,
+    "MNNAME": null,
+    "MNOBJECT": null,
+    "MNPATH": null
+  },
+  {
+    "USERNAME": "system",
+    "ROLEID": 1,
+    "ROLENM": "Your Role",
+    "ROLEMNID": 5,
+    "RLMNNAME": null,
+    "RLMNUPID": 4,
+    "RLMNSORT": "1",
+    "MNID": 1,
+    "MNTYPE": "REPORT",
+    "MNNAME": "Level 2",
+    "MNOBJECT": null,
+    "MNPATH": null
+  }
+]

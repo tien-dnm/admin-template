@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.custom-container {
+  --tw-gutter-x: 1.5rem;
+  padding-right: calc(var(--tw-gutter-x) * 0.5);
+  padding-left: calc(var(--tw-gutter-x) * 0.5);
+  @apply w-full mx-auto;
+}
+.custom-row {
+  --tw-gutter-x: 1.5rem;
+  --tw-gutter-y: 0;
+  margin-top: calc(-1 * var(--tw-gutter-y));
+  margin-right: calc(-0.5 * var(--tw-gutter-x));
+  margin-left: calc(-0.5 * var(--tw-gutter-x));
+  @apply flex flex-wrap;
+}
+.custom-row > * {
+  padding-right: calc(var(--tw-gutter-x) * 0.5);
+  padding-left: calc(var(--tw-gutter-x) * 0.5);
+  margin-top: var(--tw-gutter-y);
+  @apply w-full max-w-full shrink-0;
+}
+@layer components {
+  .custom-btn {
+    @apply inline-block  mx-1 my-1 px-3 py-2 text-sm font-medium text-center align-middle cursor-pointer select-none rounded  ease-in-out bg-gray-500 disabled:opacity-75 transition-colors duration-200;
+  }
+}
+
+.custom-toggle-columns-container {
+  @apply grid grid-flow-col;
+  grid-template-columns: 1fr;
+}
+.custom-toggle-columns-container
+  .custom-toggle-columns-button:nth-child(-n + 5) {
+  grid-column: 1 / auto;
+}
+
+.checkbox-before-text {
+  @apply before:border before:border-black before:rounded before:w-3.5 before:h-3.5 before:inline-block;
+  @apply relative flex items-center gap-1 whitespace-nowrap px-4 py-2 text-sm text-gray-700;
+}
+.checkbox-before-text.active {
+  @apply before:bg-primary before:border before:border-primary;
+  @apply after:text-white after:absolute  after:left-4 after:content-['✓'];
+}
+.p-datatable-table tbody tr {
+  @apply hover:!bg-slate-100;
+}

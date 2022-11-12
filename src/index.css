@@ -1,0 +1,193 @@
+@import url("./global/assets/font/Inter/inter.css");
+@import url("./global/assets/font/FontAwesome6/css/all.min.css");
+@import url("primereact/resources/themes/saga-blue/theme.css");
+@import url("primereact/resources/primereact.min.css");
+@import url("primeicons/primeicons.css");
+@import url("react-toastify/dist/ReactToastify.css");
+@import url("cropperjs/dist/cropper.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  html,
+  .p-component {
+    font-family: "Inter", sans-serif !important;
+  }
+}
+html {
+  @apply bg-white h-full;
+}
+body {
+  @apply bg-white h-full;
+}
+#root {
+  @apply bg-white h-full;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+button {
+  @apply focus-visible:outline-none;
+}
+/*
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	-webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+::-webkit-scrollbar {
+	width: 7px;
+	height: 20px;
+	cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+	background: #f0fff5;
+	cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb {
+	--tw-bg-opacity: 1;
+	background-color: rgb(14 159 110 / var(--tw-bg-opacity));
+	border: 3px solid rgb(14 159 110 / var(--tw-bg-opacity));
+	cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	--tw-bg-opacity: 1;
+	background-color: rgb(14 159 110 / var(--tw-bg-opacity));
+	cursor: pointer;
+}
+*/
+.Toastify__toast-theme--colored.Toastify__toast--default {
+  @apply !text-black;
+}
+.Toastify__toast-theme--colored.Toastify__toast--info {
+  @apply !bg-info;
+}
+.Toastify__toast-theme--colored.Toastify__toast--success {
+  @apply !bg-success;
+}
+.Toastify__toast-theme--colored.Toastify__toast--warning {
+  @apply !bg-warning !text-black;
+}
+.Toastify__toast-theme--colored.Toastify__toast--error {
+  @apply !bg-danger;
+}
+.p-checkbox .p-checkbox-box.p-highlight {
+  @apply !border-green-600 !bg-green-600;
+}
+.p-checkbox {
+  @apply !w-4 !h-4;
+}
+.p-checkbox .p-checkbox-box {
+  @apply !w-4 !h-4;
+}
+.p-checkbox .p-checkbox-box .p-checkbox-icon {
+  @apply !text-xs;
+}
+.p-tree {
+  @apply !border-none !p-0 !bg-transparent;
+}
+.p-inputtext {
+  @apply !bg-white border !border-gray-300 !text-gray-900 !text-sm rounded focus:!ring-blue-500 focus:!border-blue-500 !block !w-full !p-2 !outline-none !shadow-none;
+}
+.p-calendar {
+  @apply !block;
+}
+.p-link:focus {
+  @apply !outline-none !shadow-none;
+}
+.p-tree
+  .p-tree-container
+  .p-treenode
+  .p-treenode-content.p-treenode-selectable:not(.p-highlight):hover {
+  @apply !bg-[#00000030];
+}
+
+.p-tree
+  .p-tree-container
+  .p-treenode
+  .p-treenode-content
+  .p-tree-toggler:enabled:hover {
+  @apply !bg-transparent;
+}
+.p-tree .p-tree-container .p-treenode .p-treenode-content:focus {
+  @apply !shadow-none;
+}
+.p-tree .p-tree-container .p-treenode .p-treenode-content.p-highlight {
+  background: #a0c4ff !important;
+}
+.required::after {
+  @apply text-red-600 ml-1;
+  content: "(*)";
+}
+.p-tabview-panels {
+  @apply !px-0;
+}
+
+td.p-editable-column:not(.p-cell-editing):hover {
+  @apply !border !border-primary;
+}
+
+.p-focus {
+  @apply !outline-none !shadow-none;
+}
+.p-dropdown-label.p-inputtext {
+  @apply !flex !items-center;
+}
+.p-calendar.p-component.p-inputwrapper.p-inputwrapper-filled {
+  @apply !h-full;
+}
+.p-contextmenu {
+  @apply !w-auto;
+}
+
+.react-pdf__Page__canvas {
+  @apply mx-auto;
+}
+.p-datatable.p-datatable-sm .p-datatable-tbody > tr > td {
+  @apply !text-sm;
+}
+
+.p-datatable.p-datatable-sm
+  .p-datatable-tbody
+  > tr
+  > td.p-editable-column.p-cell-editing {
+  @apply !p-0;
+}
+.p-datatable.p-datatable-sm
+  .p-datatable-tbody
+  > tr
+  > td.p-editable-column.p-cell-editing
+  input[type="text"],
+.p-datatable.p-datatable-sm
+  .p-datatable-tbody
+  > tr
+  > td.p-editable-column.p-cell-editing
+  .p-inputtext,
+.p-datatable.p-datatable-sm
+  .p-datatable-tbody
+  > tr
+  > td.p-editable-column.p-cell-editing
+  .p-dropdown {
+  @apply !rounded-none  !shadow-none !h-full !text-sm;
+}
+.p-datatable .p-datatable-thead > tr,
+.p-datatable .p-datatable-thead > tr > th {
+  @apply bg-[#cfe4ff];
+}
+.p-datatable
+  .p-sortable-column:not(.p-highlight):not(.p-sortable-disabled):hover {
+  @apply bg-[#cfe4ff];
+}
+.p-datatable .p-sortable-column.p-highlight {
+  @apply !bg-[#cfe4ff];
+}
